@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope';
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
+    min-height: 100vh;
+}
+
+.advice-card{
+    background-color:hsl(217, 19%, 24%);
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+    min-width: 230px;
+    padding: 34px 30px 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+.advice-id{
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing : 3px;
+    text-decoration: uppercase;
+}
+
+.advice-text{
+    color: hsl(193, 38%, 86%);
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+.divider{
+    display: block;
+    width: 100%;
+}
+.divider img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.dice-button{
+    background-color: hsl(150, 100%, 66%);
+    color: hsl(218, 23%, 16%);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+}
+
+.dice-icon{
+    display: block;
+     width: 20px;
+    height: 20px;
+}
+
+.dice-button:hover{
+    background-color: hsl(217, 19%, 38%);
+}
+.dice-button:focus-visible{
+    outline-offset: 4px;
+}
+
+@media (max-width: 420px) {
+    container{
+        width: 320px;
+    }
+
+    .advice-card{
+        padding: 30px 20px;
+    }
+
+    .advice-text{
+        font-size: 18px;
+    }
+
+    .divider img {
+        content: url(images/pattern-divider-mobile.svg);
+    }
+}
